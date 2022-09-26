@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="demos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Order book</title>
+  </head>
+
+  <body>
+    <div style="height: 100vh; width: 100%">
+      <div style="background-color: rgba(58, 177, 31, 0.388); height: 10vh">
+        <h1>Header</h1>
+      </div>
+      <div class="container">
+        <div class="sub-container">
+          <div style="display: flex; justify-content: space-between">
+            <div style="display: flex; width: 70%">
+              <h1>Order Book</h1>
+
+              <input class="search" type="search" value="Search..." />
+              <i
+                style="
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+                class="fa-solid fa-magnifying-glass icon"
+              ></i>
+            </div>
+            <div class="filter">
+              <img id="img" src="./images/filter.svg" alt="filter image" /><span
+                id="filter"
+                >Filter</span
+              >
+              <select id="select">
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="box1">
+            <div id="date"><p>Date/Time</p></div>
+            <div class="company"><p>Company Name</p></div>
+            <div id="company_isin"><p>Company ISIN</p></div>
+            <div id="price"><p>Price</p></div>
+            <div id="qty"><p>Qty</p></div>
+            <div id="status"><p>Status</p></div>
+            <div></div>
+          </div>
+          <div class="content2">
+            <div>
+              <img src="./images/buy-purple.svg" />
+              27-07-2022, 10.00AM
+            </div>
+
+            <div>Company Name</div>
+            <div class="line5">Company ISIN</div>
+            <div class="pri">Price</div>
+            <div class="qty">Qty</div>
+            <div class="sts">Pending</div>
+            <div class="edit"><img src="./images/edit.svg" /></div>
+            <div class="delete">
+              <img src="./images/delete.svg" alt="delete button" />
+            </div>
+          </div>
+          <div class="content2 mt">
+            <div class="line2">
+              <img src="./images/sell-orange.svg" />
+              27-07-2022,10.00AM
+            </div>
+
+            <div class="line4">Company Name</div>
+            <div class="line5">Company ISIN</div>
+            <div class="pri">Price</div>
+            <div class="qty">Qty</div>
+            <div class="sts">Pending</div>
+
+            <div class="edit"><img src="./images/edit.svg" /></div>
+            <div class="delete">
+              <img src="./images/delete.svg" alt="delete button" />
+            </div>
+          </div>
+
+          <div class="content2 mt">
+            <div class="line2">
+              <img src="./images/buy-purple.svg" /><span
+                >27-07-2022, 10.00AM</span
+              >
+            </div>
+
+            <div>Company Name</div>
+            <div>Company ISIN</div>
+            <div class="pri">Price</div>
+            <div class="qty">Qty</div>
+            <div class="sts">Pending</div>
+            <div class="edit"><img src="./images/edit.svg" /></div>
+            <div class="delete">
+              <img src="./images/delete.svg" alt="delete button" />
+            </div>
+          </div>
+          <div class="content2 mt">
+            <div class="line2">
+              <img src="./images/sell-orange.svg" />
+              <span> 27-07-2022,10.00AM</span>
+            </div>
+
+            <div>Company Name</div>
+            <div>Company ISIN</div>
+            <div class="pri">Price</div>
+            <div class="qty">Qty</div>
+            <div class="sts">Pending</div>
+
+            <div class="edit"><img src="./images/edit.svg" /></div>
+            <div class="delete">
+              <img src="./images/delete.svg" alt="delete button" />
+            </div>
+          </div>
+          <div class="content2 mt">
+            <div class="line2">
+              <img src="./images/buy-purple.svg" />
+              <span>27-07-2022,10.00AM</span>
+            </div>
+
+            <div>Company Name</div>
+            <div>Company ISIN</div>
+            <div class="pri">Price</div>
+            <div class="qty">Qty</div>
+            <div class="sts">Pending</div>
+            <div class="edit"><img src="./images/edit.svg" /></div>
+            <div class="delete">
+              <img src="./images/delete.svg" alt="delete button" />
+            </div>
+          </div>
+          <!-- <div style="display: flex">
+            <div class="less-icon"><span><</span></div>
+            <div class="less-icon">1</div>
+            <div class="less-icon2">2</div>
+            <div>3</div>
+            <div>...</div>
+            <div>></div>
+          </div> -->
+        </div>
+      </div>
+
+      <div style="background-color: blue; height: 10%">Footer</div>
+    </div>
+  </body>
+</html>
