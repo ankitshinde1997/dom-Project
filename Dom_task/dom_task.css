@@ -1,6 +1,10 @@
 #box{
     visibility: hidden;
+    
 }
 #table{
     visibility: hidden;
+}
+#save{
+    display: none;
 }
