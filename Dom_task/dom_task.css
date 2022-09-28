@@ -5,6 +5,10 @@
 #table{
     visibility: hidden;
 }
-#save{
+#save_data{
     display: none;
+}
+
+#update{
+    display:none;
 }
