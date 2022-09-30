@@ -31,6 +31,7 @@
           id="form1 "
           class="row justify-content-center mb-4"
           onsubmit="sub(event)"
+          autocomplete="off"
         >
           <div class="col-10 mb-3">
             <label for="exampleInputEmail1">First Name</label>
@@ -39,8 +40,9 @@
               class="form-control"
               id="first_name"
               placeholder="First Name"
+              onkeydown="validfn()"
             />
-            <span id="msgfn"></span>
+            <span class="text" id="msgfn"></span>
           </div>
           <div class="col-10 mb-3">
             <label for="last_name">Last Name</label>
@@ -49,25 +51,31 @@
               class="form-control"
               id="last_name"
               placeholder="Last Name"
+              onkeydown="validln()"
             />
+            <span class="text" id="msgln"></span>
           </div>
           <div class="col-10 mb-3">
             <label for="exampleInputEmail1">Email</label>
             <input
-              type="email"
+              type="text"
               class="form-control"
               id="email"
               placeholder="Enter email"
+              onkeydown="validem()"
             />
+            <span class="text" id="msgem"></span>
           </div>
           <div class="col-10 mb-3">
             <label for="exampleInputPassword1">Mobile</label>
             <input
-              type="number"
+              type="text"
               class="form-control"
               id="mobile_no"
               placeholder="Mobile_no."
+              onkeydown="validmob(event)"
             />
+            <span class="text" id="msgmob"></span>
           </div>
           <div class="col-10">
             <button type="submit" id="submit" class="btn btn-success">

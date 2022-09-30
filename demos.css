@@ -3,11 +3,11 @@
     padding: 0px;
 }
 
-.container{
+.container1{
     background-color: #E9F2FF;
     height: 150vh;
 }
-.sub-container{
+.sub-container1{
     position:relative;
     /* background-color: brown; */
     /* width:90%;
@@ -80,13 +80,13 @@ opacity: 1;
 }
 #img{
     position: relative;
-    top:14px;
-    right: -13px;
+    top:0px;
+    right: 13px;
 }
 #filter{
     position:relative;
-    top:11px;
-    right:-21px ;
+    top:0px;
+    right:18px ;
 }
 
 #select{

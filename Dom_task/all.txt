@@ -73,3 +73,30 @@
     // document.getElementById("ln").innerHTML = lname;
     // document.getElementById("eml").innerHTML = email;
     // document.getElementById("mob").innerHTML = mobile;
+
+
+    edit data ke yaha ka he
+
+     // e.setAttribute("style", "display:none;");
+  // console.log(e.parentElement.setAttribute("style", "display:block"));
+  // for (let i = 0; i < arr.length; i++) {}
+
+
+
+  // console.log(_fname, "hiii");
+  // console.log(formvalidation(), "aaaa");
+  // let fname = document.getElementById("first_name").value.trim();
+  // let lname = document.getElementById("last_name").value.trim();
+  // let email = document.getElementById("email").value.trim();
+  // let mobile = document.getElementById("mobile_no").value;
+  // console.log(lname, "lname");
+
+  // let fn = _fname.value.trim();
+    // let ln = _lname.value.trim();
+    // let em = _email.value.trim();
+    // let mob = _mobile.value.trim();
+
+    // let fname = _fname.value;
+    // let lname = _lname.value;
+    // let email = _email.value;
+    // let mobile = _mobile.value;

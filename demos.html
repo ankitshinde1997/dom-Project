@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
     <title>Order book</title>
   </head>
 
@@ -20,23 +24,19 @@
       <div style="background-color: rgba(58, 177, 31, 0.388); height: 10vh">
         <h1>Header</h1>
       </div>
-      <div class="container">
-        <div class="sub-container">
+      <div class="container1">
+        <div class="sub-container1">
           <div style="display: flex; justify-content: space-between">
             <div style="display: flex; width: 70%">
               <h1>Order Book</h1>
-
-              <input class="search" type="search" value="Search..." />
-              <i
-                style="
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                "
-                class="fa-solid fa-magnifying-glass icon"
-              ></i>
+              <form action="#">
+                <input class="search" type="search" placeholder="Search..." />
+                <button type="submit" class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
             </div>
-            <div class="filter">
+            <!-- <div class="filter">
               <img id="img" src="./images/filter.svg" alt="filter image" /><span
                 id="filter"
                 >Filter</span
@@ -44,6 +44,45 @@
               <select id="select">
                 <option></option>
               </select>
+            </div> -->
+            <!-- <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div> -->
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle filter"
+                type="button"
+                data-toggle="dropdown"
+              >
+                <img id="img" src="./images/filter.svg" alt="filter image" />
+
+                <span id="filter"> Filter </span>
+                <span class="caret"></span>
+              </button>
+              <!-- <ul class="dropdown-menu">
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+              </ul> -->
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
             </div>
           </div>
           <div class="box1">
@@ -56,12 +95,17 @@
             <div></div>
           </div>
           <div class="content2">
-            <div>
-              <img src="./images/buy-purple.svg" />
-              27-07-2022, 10.00AM
+            <div style="display: flex">
+              <div>
+                <img src="./images/buy-purple.svg" />
+              </div>
+              <div>
+                <p>27-07-2022</p>
+                <p>10.00AM</p>
+              </div>
             </div>
 
-            <div>Company Name</div>
+            <div><p>Company Name</p></div>
             <div class="line5">Company ISIN</div>
             <div class="pri">Price</div>
             <div class="qty">Qty</div>
@@ -74,7 +118,8 @@
           <div class="content2 mt">
             <div class="line2">
               <img src="./images/sell-orange.svg" />
-              27-07-2022,10.00AM
+              <p>27-07-2022</p>
+              <p>10.00AM</p>
             </div>
 
             <div class="line4">Company Name</div>
@@ -91,9 +136,9 @@
 
           <div class="content2 mt">
             <div class="line2">
-              <img src="./images/buy-purple.svg" /><span
-                >27-07-2022, 10.00AM</span
-              >
+              <img src="./images/buy-purple.svg" />
+              <p>27-07-2022</p>
+              <p>10.00AM</p>
             </div>
 
             <div>Company Name</div>
@@ -109,7 +154,8 @@
           <div class="content2 mt">
             <div class="line2">
               <img src="./images/sell-orange.svg" />
-              <span> 27-07-2022,10.00AM</span>
+              <p>27-07-2022</p>
+              <p>10.00AM</p>
             </div>
 
             <div>Company Name</div>
@@ -126,11 +172,12 @@
           <div class="content2 mt">
             <div class="line2">
               <img src="./images/buy-purple.svg" />
-              <span>27-07-2022,10.00AM</span>
+              <p>27-07-2022</p>
+              <p>10.00AM</p>
             </div>
 
-            <div>Company Name</div>
-            <div>Company ISIN</div>
+            <div><p>Company Name</p></div>
+            <div><p>Company ISIN</p></div>
             <div class="pri">Price</div>
             <div class="qty">Qty</div>
             <div class="sts">Pending</div>

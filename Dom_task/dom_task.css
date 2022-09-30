@@ -5,10 +5,14 @@
 #table{
     visibility: hidden;
 }
-#save_data{
+/* #save_data{
     display: none;
-}
+} */
 
-#update{
+/* #update{
     display:none;
+} */
+
+.text{
+    color: red;
 }
