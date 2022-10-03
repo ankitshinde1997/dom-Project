@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+​
+</head>
+<body>
+    <div id="form-container">
+        <h2>Registion Form</h2>
+        <form id="form" onsubmit="sub(event)"autocomplete="on">
+            <label class="form-label">First Name</label>
+            <input type="text" class="form-control" placeholder="Enter your First Name" id="Fname">
+            <p class="Error" id="fnameError"></p>
+            <label class="form-label">Last Name</label>
+            <input type="text" class="form-control" name="lname" placeholder="Enter your Last Name" id="Lname"onfocus="show()" onblur="hide()">
+            <p class="Error" id="lnameError"></p>
+            <label class="form-label">Mobile Number</label>
+            <input type="number" class="form-control" name="mob" placeholder="Enter your Mobile Number" id="Mob" onfocus="show()" onblur="hide()">
+            <p class="Error" id="mobError"></p>
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="Gmail" placeholder="Enter your Email Address" id="Gmail"
+            onfocus="show()" onblur="hide()"
+            >
+​
+            <p class="Error" id="gmailError"></p>
+            <input type="submit" class="btn btn-primary" value="Submit">
+            <!-- <input type="reset" class="btn btn-danger" value="Reset"> -->
+        </form>
+        <p id="msg"></p>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">FirstNamecc</th>
+            <th scope="col">LastName</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Gmail</th>
+            <th scope="col">Active</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+​
+    
+​
+    <script src="new.js"></script>
+</body>
+</html>
