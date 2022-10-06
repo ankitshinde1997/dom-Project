@@ -5,7 +5,7 @@
 
 .container1{
     background-color: #E9F2FF;
-    height: 150vh;
+    height: 120vh;
 }
 .sub-container1{
     position:relative;
@@ -23,7 +23,7 @@
 .search{
 position: absolute;
 left:309px;  
-width: 917px;
+width: 56%;
 height: 40px;
 padding: 20px;
 font: normal normal normal 16px/22px Open Sans;
@@ -37,17 +37,14 @@ opacity: 1;
 }
 
 .icon{
-    position:relative;
-    left:1022px;
+    position:absolute;
+    left:71.7%;
     /* top:155px; */
     height:42px;
     width:40px;
     
     justify-content: center;
     align-items: center;
- 
-/* UI Properties */
-/* background: var(--unnamed-color-7522de) 0% 0% no-repeat padding-box; */
    background: rgba(117, 34, 222, 1) 0% 0% no-repeat padding-box;
    border-radius: 5px;
    opacity: 1;
@@ -62,9 +59,18 @@ border-radius: 5px;
 opacity: 1;
 
 }
+
+.dropdown1{
+width: 150px;
+height: 40px;
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
 .box1{
      position: relative;
-     top:40px;
+     top:24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -78,10 +84,10 @@ opacity: 1;
     border-radius: 10px;
     color:white;
 }
-#img{
+#filter_img{
     position: relative;
-    top:0px;
-    right: 13px;
+    top: 0px;
+    right: 22px;
 }
 #filter{
     position:relative;
@@ -97,7 +103,8 @@ opacity: 1;
     border-style: none;
 }
 .content2{
-    margin-top: 62px;
+    position: relative;
+    top: 45px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,6 +113,13 @@ opacity: 1;
     opacity: 1;
     height: 69px;
 }
+
+.img_buy{
+    position: absolute;
+    left: 75px;
+    top: 20px;
+}
+
 .mt{
     margin-top: 20px;
 }
@@ -128,29 +142,87 @@ opacity: 1;
 
  #date{
 
-    margin-left: 46px;
+    margin-left: 70px;
  }   
  .company{
     position: absolute;
-    left: 313px;
+    left: 20%;
  }
 
- #company_isin{
+ .company_isin{
     position: absolute;
-    left: 615px;
+    left: 39%;
 }
  
  #price{
     position: absolute;
-    left: 949px;
+    left: 58%;
 }
  
 
  #qty{
     position:absolute;
-    left:1185px;
+    left:71.6%;
  }
  #status{
     position: absolute;
-    left: 1353px;
+    left: 81%;
  }
+
+ .edit{position: relative;
+    /* top: 24px; */
+    left: 130px;
+    width: 22px;
+    height: 22px; 
+    /* UI Properties */
+     opacity: 1;}
+
+.delete{position: relative;
+    /* top: 24px; */
+    left: 1.2%;
+    width: 22px;
+    height: 22px; 
+    /* UI Properties */
+    opacity: 1;}
+
+.pri{
+        position: absolute;
+        top: 24px;
+       left: 908px;
+       width: 37px;
+       height: 22px; 
+    /* UI Properties */
+    /* /* color: var(--unnamed-color-111011); */
+    /* text-align: left; */
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #111011;
+    opacity: 1;
+    }
+    .qty{position: absolute;
+        top: 24px;
+    left: 1051px;
+    width: 30px;
+    height: 22px; 
+    /* UI Properties */
+    /* /* color: var(--unnamed-color-111011); */
+    text-align: left;
+    font: normal normal normal 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #111011;
+    opacity: 1;
+    
+    }
+    .sts{position: absolute;
+        top: 24px;
+        left: 1150px;
+        width: 61px;
+        height: 22px; 
+        /* UI Properties */
+        /* /* color: var(--unnamed-color-111011); */
+        text-align: left;
+        font: normal normal normal 16px/22px Open Sans;
+        letter-spacing: 0px;
+        color: #111011;
+        opacity: 1;}
+    

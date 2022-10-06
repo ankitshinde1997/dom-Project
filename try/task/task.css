@@ -1,0 +1,17 @@
+main,input {
+    margin-left: 930px;
+
+}
+main,table{
+    background-color: rgb(122, 103, 230);
+}
+
+#message{
+    color: red;
+}
+#message1{
+    color: red;
+}
+#message2{
+    color: red;
+}

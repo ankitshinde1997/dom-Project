@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD Table
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            </td>
+            <td>
+                <table class="list" id="monu">
+                    <thead>
+                        <tr>
+                            <th>Name </th>
+                            <th>Age</th>
+                            <th>Country</th>
+                            <th>Action</th>
+                            <!-- <th></th> -->
+                        </tr>
+                        
+                        <td>
+
+                            <label class="validation-error hide" id="NameValidationError"></label>
+                            <input type="text" name="Name" id="Name" >
+                        </td>
+                        <td><input type="text" name="empCode" id="empCode" >
+                        </td>
+                        <td>
+                            <input type="text" name="salary" id="salary">
+                        </td>
+                     <td>
+                        <button class="savbtn" onclick="myFunction()">Save</button></td>
+ 
+                        <div class="form-action-buttons">
+                            <a onClick="onAdd(this)"><Button>Add Row</button></a>
+
+                        </div>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

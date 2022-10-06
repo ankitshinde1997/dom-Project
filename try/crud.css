@@ -1,0 +1,44 @@
+body{
+    background-color: aqua;
+}
+    
+input.New_Form{
+margin-left: 870px;
+margin-top: 150px;
+background-color: rgb(109, 190, 109);
+color: aliceblue;
+size: 500px;
+}
+#tb_text{
+    background-color: rgb(128, 140, 241);
+    width:400px; 
+    height: 20px;
+    border-collapse: collapse;
+    margin-top: 10px;
+
+}
+#name ,#city ,#age ,#save{
+    display: none;
+    width:100px; 
+    height: 20px;
+    
+}
+/* #city{
+    display: none;
+    
+}
+#age {
+    display: none;
+    
+}
+.savbtn{
+    display: none;
+} */
+
+tr:nth-child(even),table.tr {
+    background-color: rgb(72, 58, 197);
+    
+}
+#name1,#city1,#age1{
+    color: red;
+}

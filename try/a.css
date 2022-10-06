@@ -1,0 +1,18 @@
+#box{
+    visibility: hidden;
+    
+}
+#table{
+    visibility: hidden;
+}
+/* #save_data{
+    display: none;
+} */
+
+/* #update{
+    display:none;
+} */
+
+.text{
+    color: red;
+}

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <script type="text/javascript" src="task.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <input type="button" class="add" onclick="change_new_row();" value="Add Row" style="margin-left: 930px;">
+        <table align='center' cellspacing=2 cellpadding=5 id="data_table" border=1 style="background-color: rgb(128, 140, 241);">
+            <tr>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="new_name" style="display:none"><span id="message" style="color: red;"></span></td>
+                <td><input type="text" id="new_country" style="display:none"><span id="message1" style="color: red;"></span></td>
+                <td><input type="number " id="new_age" style="display:none"><span id="message2" style="color: red;"></span></td>
+                <td><input type="button" class="add" id="sav_btn" onclick="add_row();" value="Save"
+                        style="display:none"></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>

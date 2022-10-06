@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="a.css" class="css" />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="a.js"></script>
+
+    <title>DOM</title>
+  </head>
+  <body style="color: white; background-color: #1d2630">
+    <div class="container-fluid h-100">
+      <div>
+        <button class="btn btn-primary" onclick="myfunction()">Add</button>
+      </div>
+
+      <div class="m-5 main row justify-content-center" id="box">
+        <form
+          id="form1 "
+          class="row justify-content-center mb-4"
+          onsubmit="sub(event)"
+          autocomplete="off"
+        >
+          <div class="col-10 mb-3">
+            <label for="exampleInputEmail1">First Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="first_name"
+              placeholder="First Name"
+              onkeydown="validfn()"
+            />
+            <span class="text" id="msgfn"></span>
+          </div>
+          <div class="col-10 mb-3">
+            <label for="last_name">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="last_name"
+              placeholder="Last Name"
+              onkeydown="validln()"
+            />
+            <span class="text" id="msgln"></span>
+          </div>
+          <div class="col-10 mb-3">
+            <label for="exampleInputEmail1">Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="email"
+              placeholder="Enter email"
+              onkeydown="validem()"
+            />
+            <span class="text" id="msgem"></span>
+          </div>
+          <div class="col-10 mb-3">
+            <label for="exampleInputPassword1">Mobile</label>
+            <input
+              type="text"
+              class="form-control"
+              id="mobile_no"
+              placeholder="Mobile_no."
+              onkeydown="validmob(event)"
+              oninput="num(this)"
+            />
+            <span class="text" id="msgmob"></span>
+          </div>
+          <div class="col-10">
+            <button type="submit" id="submit" class="btn btn-success">
+              Submit
+            </button>
+            <!-- <button
+              type="button"
+              onclick="can()"
+              id="update"
+              class="btn btn-success"
+            >
+              Update
+            </button> -->
+          </div>
+        </form>
+      </div>
+      <div id="table">
+        <table class="table table-striped table-dark" id="table1">
+          <thead>
+            <tr>
+              <th scope="col">First Name</th>
+              <th scope="col">Last Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Mobile</th>
+              <th scope="col">Action</th>
+              
+            </tr>
+          </thead>
+          <tbody class="tbody" id="tbody1"></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

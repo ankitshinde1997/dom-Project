@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="crud.css">
+    <script type="text/javascript" src="crud.js"></script>
+</head>
+<title>CRUD</title>
+
+<body>
+    <div id="monu">
+        <input type="button" class="New_Form" onclick="New_Form();" value="Add Row">
+        <table id="tb_text"  border=''; align='center'>
+
+            <tr style="background-color: rgb(167, 120, 120);">
+                <th>Name</th>
+                <th>City</th>
+                <th>Age</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="name" class="formerror" name="fname" required>
+                    <span id="name1"></span>
+                </td>
+                <td><input type="text" id="city" class="formerror" name="fcity" required>
+                    <span id="city1"></span>
+                </td>
+                <td>
+                    <input type="number" id="age" class="formerror" name="fage" required>
+                    <span id="age1"></span>
+                </td>
+                <td>
+                    <input type="button" class="savbtn" id="save" onclick="insert_Form();" value="Save">
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>
