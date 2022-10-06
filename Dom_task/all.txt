@@ -100,3 +100,11 @@
     // let lname = _lname.value;
     // let email = _email.value;
     // let mobile = _mobile.value;
+
+    // console.log(typeof mob);
+    // let x = parseInt(fn);
+    // console.log(typeof x, "dfh");
+    // console.log(x.toString(), "kkkk");
+    // // console.log(typeof fn);
+    // console.log(isNaN(fn.toString()));
+    

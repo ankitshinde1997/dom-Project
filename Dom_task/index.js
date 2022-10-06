@@ -74,7 +74,7 @@ function sub(event) {
 }
 }
 
-function edit(e, f) {
+function edit(e,f) {
   console.log(f, "save_id");
   f.style.display = "block";
   document.getElementById(e.id).style.display = "none";
